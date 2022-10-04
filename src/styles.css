@@ -1,4 +1,4 @@
-.body_section {
+.character_div {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
@@ -19,4 +19,28 @@
 .image {
     max-width: 100%;
     max-height: 100%;
+}
+
+.navbar_links li {
+    display: inline;
+    margin: 15px;
+}
+
+.episode_code {
+    float: right;
+}
+
+.episode_item {
+    margin: 10px;
+    
+    height: 50px;
+}
+
+.episode_item:hover {
+    background-color: #D3D3D3;
+}
+
+.episodes_list {
+    margin-left: 20px;
+    margin-right: 20px;
 }
