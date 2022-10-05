@@ -1,4 +1,5 @@
 import {gql, useQuery} from '@apollo/client'
+import { Link } from 'react-router-dom';
 
 const Characters = () => {
 
@@ -30,7 +31,9 @@ const Characters = () => {
             <div className="character_image">
                 <img src={`${image}`} className="image" alt={`${name}`} />
             </div>
-            <div className="character_name">{name}</div>
+            <div className="character_name">
+                <Link to={`/character/${id}`}> {name}</Link>
+            </div>
             <div className="character_location">
                 <p>Location: {location.name}</p>
                 <p>Dimension: {location.dimension}</p>

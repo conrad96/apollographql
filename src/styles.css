@@ -40,7 +40,15 @@
     background-color: #D3D3D3;
 }
 
-.episodes_list {
+.episodes_list , .locations_list {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.residents_div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
