@@ -53,17 +53,16 @@ const Location = () => {
                                             </div>
                                             <div className="resident_location">
                                                 <p>Name: <Link to={`/character/${id}`}> {name}</Link></p>
-                                                <p>Episode: 
-                                                    <ul>
-                                                    {
-                                                        episode.map(obj=> {
-                                                            return (
-                                                                <li>{obj.episode}</li>
-                                                            )
-                                                        })
-                                                    }
-                                                    </ul>
-                                                </p>
+                                                <p>Episode: </p>
+                                                <ul>
+                                                {
+                                                    episode.map(obj=> {
+                                                        return (
+                                                            <li key={obj.id}>{obj.episode}</li>
+                                                        )
+                                                    })
+                                                }
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>

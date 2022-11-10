@@ -8,6 +8,7 @@ import {
     Route
 } from 'react-router-dom';
 import Episodes from "./Episodes";
+import Episode from "./Episode";
 import Locations from "./Locations";
 import Location from "./Location";
 import './styles.css';
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="/characters" element={<Characters />} />
                 <Route path="/character/:id" element={<Character />} />
                 <Route path="/episodes"  element={<Episodes />} />
+                <Route path="/episode/:id"  element={<Episode />} />
                 <Route path="/locations"  element={<Locations />} />
                 <Route path="/location/:id"  element={<Location />} />
             </Routes>

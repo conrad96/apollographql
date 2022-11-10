@@ -1,7 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
 import React from "react";
 import { Link } from "react-router-dom";
-import './styles.css';
 
 const Episodes = () => {
 
@@ -25,7 +24,7 @@ const Episodes = () => {
     const results = data.episodes.results.map(({id, name, episode, air_date}) => {
         return (
             <div className="episode_item" key={id}>
-                <div className="episode_name">{id}. <Link to="/"> {name}</Link></div>
+                <div className="episode_name">{id}. <Link to={`/episode/${id}`}> {name}</Link></div>
                 <div className="episode_code"><Link to="/">{episode}</Link></div>
             </div>
         )
